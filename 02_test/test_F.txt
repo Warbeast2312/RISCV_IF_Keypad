@@ -1,0 +1,16 @@
+lui x1, 0x40400
+lui x2, 0x40000
+
+lui x3, 0x2
+
+sw x1, 0(x3)
+sw x2, 4(x3)
+
+flw f1, 0(x3)
+flw f2, 4(x3)
+
+fadd.s f3, f1, f2
+fsub.s f4, f1, f2
+fmul.s f5, f1, f2
+fdiv.s f6, f1, f2
+
